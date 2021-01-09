@@ -1,0 +1,34 @@
+.myJob {
+    background-color: $color-gray-5;
+    border-bottom: 1px solid #dedfe0;
+    .title {
+        @include text($color-gray-4, $fs-1, $fw-normal);
+        margin-bottom: $mg-2 + 5;
+    }
+
+    .job-content {
+        padding: 28px 30px;
+        h4 {
+            @include text($color-black-light, $fs-2 - 1, $fw-bold-1);
+        }
+        p {
+            @include text($color-black-0, $fs-0 + 1, $fw-normal);
+            padding-top: $pd-0 - 2;
+            line-height: 1.5;
+        }
+    }
+
+    .border-r {
+        border-right: 1px solid #dedfe0;
+    }
+
+    @include respond-to("medium") {
+        .logo-job {
+            padding: $pd-1;
+        }
+
+        .border-r {
+            border: none;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.myCourses_1 {
+    margin-top: $mg-2;
+    .courses-1_content {
+        .courses-1_intro {
+            padding: 135px 30px;
+            max-width: 447px;
+            background: $color-gray-5;
+            h4 {
+                @include text($color-black-0, $fs-2 - 1, $fw-bold-1);
+            }
+        }
+
+        .courses-1_list {
+            .nav {
+                justify-content: space-between;
+                border: none;
+                .nav-item {
+                    &:hover {
+                        .nav-link {
+                            border: none;
+                            color: $color-blue;
+                        }
+                    }
+                    .nav-link.active {
+                        border: none;
+                        border-bottom: 5px solid $color-blue;
+                    }
+                    .nav-link {
+                        @include text($color-black-0, $fs-0, $fw-normal);
+                        border: none;
+                    }
+                }
+            }
+
+            .tab-content {
+                position: relative;
+                .courses-1_item {
+                    img {
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
+
+                    .card-title {
+                        @include text($color-black-0, $fs-0 - 1, $fw-bold);
+                    }
+
+                    .card-text {
+                        @include text($color-gray-4, $fs-1 - 1, $fw-normal);
+                    }
+
+                    .rating {
+                        .rating_star {
+                            @include text($color-yellow, $fs-1 - 1, $fw-normal);
+                            margin: $mg-0;
+                        }
+                        span:nth-child(2) {
+                            @include text($color-gray-4, $fs-1 - 1, $fw-bold);
+                            margin: $mg-0;
+                        }
+                        span:last-child {
+                            @include text($color-gray-4, $fs-1 - 1, $fw-normal);
+                            margin: $mg-0;
+                        }
+                    }
+
+                    .price {
+                        text-align: right;
+                        padding-top: $pd-1;
+                        .old-price {
+                            @include text($color-gray-4, $fs-1, $fw-normal);
+                            text-decoration: line-through;
+                            margin-right: $mg-0 + 2;
+                        }
+
+                        .new-price {
+                            @include text($color-black-0, $fs-2 - 2, $fw-bold-1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include respond-to("large") {
+        .courses-1_intro {
+            display: none;
+        }
+    }
+}

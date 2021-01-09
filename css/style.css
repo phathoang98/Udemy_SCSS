@@ -1,0 +1,535 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #29303b;
+  background-color: #fff;
+  line-height: 1.43; }
+
+.wrapper {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 20px; }
+
+.myNavBar .border-top {
+  width: 100%;
+  height: 0.5rem;
+  background: linear-gradient(90deg, #645b53 0%, #eb5252 18.23%, #f78f2f 34.37%, #f4c151 48.96%, #52bb76 66.15%, #26a5d7 82.29%, #e069b7 100%); }
+.myNavBar .navbar .header-left {
+  flex-wrap: nowrap; }
+.myNavBar .navbar-brand img {
+  width: 110px; }
+.myNavBar .categories {
+  color: #505763;
+  font-size: 13px;
+  font-weight: normal;
+  align-self: center;
+  padding: 10px 15px;
+  border: 1px solid transparent; }
+  .myNavBar .categories:hover {
+    background-color: rgba(20, 23, 28, 0.05);
+    cursor: pointer;
+    border-color: rgba(20, 23, 28, 0.05); }
+.myNavBar .input-search {
+  flex-grow: 5; }
+  .myNavBar .input-search .form-control {
+    background-color: rgba(20, 23, 28, 0.05);
+    border: none;
+    transition: none; }
+    .myNavBar .input-search .form-control:focus {
+      box-shadow: none;
+      background-color: #fff;
+      border-top: 1px solid #cacbcc;
+      border-left: 1px solid #cacbcc;
+      border-bottom: 1px solid #cacbcc; }
+    .myNavBar .input-search .form-control:focus + .input-group-append .input-group-text {
+      color: #ec5252;
+      background-color: #fff;
+      border-top: 1px solid #cacbcc;
+      border-right: 1px solid #cacbcc;
+      border-bottom: 1px solid #cacbcc; }
+    .myNavBar .input-search .form-control:focus + .input-group-append:hover .input-group-text {
+      background-color: #ec5252;
+      color: #fff; }
+    .myNavBar .input-search .form-control::placeholder {
+      font-size: 13px; }
+  .myNavBar .input-search .input-group-append {
+    margin-left: 0px; }
+    .myNavBar .input-search .input-group-append .input-group-text {
+      color: #ec5252;
+      text-decoration: none; }
+    .myNavBar .input-search .input-group-append .input-group-text {
+      background-color: rgba(20, 23, 28, 0.05);
+      border: none; }
+      .myNavBar .input-search .input-group-append .input-group-text:hover {
+        background-color: #ec5252;
+        color: #fff; }
+.myNavBar .navbar-nav {
+  justify-content: space-around;
+  width: 95%;
+  align-self: center; }
+  .myNavBar .navbar-nav .business,
+  .myNavBar .navbar-nav .teach {
+    width: 141px;
+    text-align: center; }
+  .myNavBar .navbar-nav .nav-item {
+    border: 1px solid transparent; }
+    .myNavBar .navbar-nav .nav-item .nav-link {
+      color: #505763;
+      font-size: 13px;
+      font-weight: normal; }
+    .myNavBar .navbar-nav .nav-item:hover {
+      background-color: rgba(20, 23, 28, 0.05);
+      border-color: rgba(20, 23, 28, 0.05); }
+  .myNavBar .navbar-nav .nav-item:nth-child(3) {
+    border: 1px solid transparent;
+    border-radius: 50%; }
+@media screen and (max-width: 1200px) {
+  .myNavBar .navbar-nav .business,
+  .myNavBar .navbar-nav .teach {
+    display: none; } }
+@media screen and (max-width: 992px) {
+  .myNavBar .categories {
+    padding: 2px; }
+  .myNavBar .categories i {
+    font-size: 12px; } }
+@media screen and (max-width: 768px) {
+  .myNavBar .input-search {
+    width: 40%; } }
+@media screen and (max-width: 576px) {
+  .myNavBar .input-search,
+  .myNavBar .categories {
+    display: none; } }
+
+.carousel {
+  background-image: url(../../img/cover.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative; }
+  .carousel .carousel-content {
+    position: absolute;
+    top: 30%;
+    left: 5%; }
+    .carousel .carousel-content h1 {
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold; }
+    .carousel .carousel-content p {
+      color: #fff;
+      font-size: 20px -2;
+      font-weight: normal; }
+    .carousel .carousel-content .input .form-control {
+      padding: 24px;
+      border-radius: 0;
+      border: none; }
+      .carousel .carousel-content .input .form-control::placeholder {
+        color: #a1a7b3;
+        font-size: 20px;
+        font-weight: normal; }
+      .carousel .carousel-content .input .form-control:focus {
+        box-shadow: none; }
+    .carousel .carousel-content .input .input-group-append .input-group-text {
+      text-decoration: none;
+      background-color: #fff;
+      color: #ec5252;
+      border: none;
+      padding: 15px; }
+    .carousel .carousel-content .input .input-group-append:hover .input-group-text {
+      background-color: #ec5252;
+      color: #fff; }
+
+.myIntro {
+  background: linear-gradient(-45deg, #ec5252 0%, #6e1a52 100%); }
+  .myIntro .intro_content {
+    padding: 15px; }
+    .myIntro .intro_content .item-2 {
+      padding-left: 70px; }
+    .myIntro .intro_content .item-3 {
+      padding-left: 120px; }
+    .myIntro .intro_content .intro_item .icon {
+      color: #fff;
+      font-size: 50px;
+      font-weight: bold;
+      margin-right: 25px; }
+    .myIntro .intro_content .intro_item .icon_content {
+      padding: 10px; }
+      .myIntro .intro_content .intro_item .icon_content p:first-child {
+        color: #fff;
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 0; }
+      .myIntro .intro_content .intro_item .icon_content p:last-child {
+        color: #fff;
+        font-size: 15px;
+        font-weight: normal; }
+  @media screen and (max-width: 1200px) {
+    .myIntro .intro_content .icon {
+      display: none; }
+    .myIntro .intro_content .icon_content {
+      text-align: center; } }
+
+@media screen and (max-width: 768px) {
+  .myIntro {
+    display: none; } }
+.myCourses_1 {
+  margin-top: 25px; }
+  .myCourses_1 .courses-1_content .courses-1_intro {
+    padding: 135px 30px;
+    max-width: 447px;
+    background: #f7f8fa; }
+    .myCourses_1 .courses-1_content .courses-1_intro h4 {
+      color: #29303b;
+      font-size: 19px;
+      font-weight: 700; }
+  .myCourses_1 .courses-1_content .courses-1_list .nav {
+    justify-content: space-between;
+    border: none; }
+    .myCourses_1 .courses-1_content .courses-1_list .nav .nav-item:hover .nav-link {
+      border: none;
+      color: #007791; }
+    .myCourses_1 .courses-1_content .courses-1_list .nav .nav-item .nav-link.active {
+      border: none;
+      border-bottom: 5px solid #007791; }
+    .myCourses_1 .courses-1_content .courses-1_list .nav .nav-item .nav-link {
+      color: #29303b;
+      font-size: 15px;
+      font-weight: normal;
+      border: none; }
+  .myCourses_1 .courses-1_content .courses-1_list .tab-content {
+    position: relative; }
+    .myCourses_1 .courses-1_content .courses-1_list .tab-content .courses-1_item img:hover {
+      opacity: 0.5; }
+    .myCourses_1 .courses-1_content .courses-1_list .tab-content .courses-1_item .card-title {
+      color: #29303b;
+      font-size: 14px;
+      font-weight: bold; }
+    .myCourses_1 .courses-1_content .courses-1_list .tab-content .courses-1_item .card-text {
+      color: #686f71;
+      font-size: 12px;
+      font-weight: normal; }
+    .myCourses_1 .courses-1_content .courses-1_list .tab-content .courses-1_item .rating .rating_star {
+      color: #f4c150;
+      font-size: 12px;
+      font-weight: normal;
+      margin: 2px; }
+    .myCourses_1 .courses-1_content .courses-1_list .tab-content .courses-1_item .rating span:nth-child(2) {
+      color: #686f71;
+      font-size: 12px;
+      font-weight: bold;
+      margin: 2px; }
+    .myCourses_1 .courses-1_content .courses-1_list .tab-content .courses-1_item .rating span:last-child {
+      color: #686f71;
+      font-size: 12px;
+      font-weight: normal;
+      margin: 2px; }
+    .myCourses_1 .courses-1_content .courses-1_list .tab-content .courses-1_item .price {
+      text-align: right;
+      padding-top: 10px; }
+      .myCourses_1 .courses-1_content .courses-1_list .tab-content .courses-1_item .price .old-price {
+        color: #686f71;
+        font-size: 13px;
+        font-weight: normal;
+        text-decoration: line-through;
+        margin-right: 4px; }
+      .myCourses_1 .courses-1_content .courses-1_list .tab-content .courses-1_item .price .new-price {
+        color: #29303b;
+        font-size: 18px;
+        font-weight: 700; }
+  @media screen and (max-width: 992px) {
+    .myCourses_1 .courses-1_intro {
+      display: none; } }
+
+/*
+* File NÀY DÙNG ĐỂ CHỈNH SỬA TRỰC TIẾP THƯ VIỆN CỬA NGƯỜI KHÁC 
+(là chỉnh sửa thông qua chính class của thư viện đó)
+*/
+.owl-carousel .owl-nav.disabled {
+  display: block !important; }
+  .owl-carousel .owl-nav.disabled .owl-prev,
+  .owl-carousel .owl-nav.disabled .owl-next {
+    position: absolute;
+    top: 30%;
+    left: -2%;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50% !important;
+    background-color: #fff;
+    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1); }
+    .owl-carousel .owl-nav.disabled .owl-prev span,
+    .owl-carousel .owl-nav.disabled .owl-next span {
+      color: #007791;
+      font-size: 40px;
+      font-weight: normal;
+      line-height: 0.6; }
+    .owl-carousel .owl-nav.disabled .owl-prev:focus,
+    .owl-carousel .owl-nav.disabled .owl-next:focus {
+      outline: none; }
+  .owl-carousel .owl-nav.disabled .owl-next {
+    left: unset;
+    right: -2%; }
+
+.myConvenient {
+  background: #f2f3f5;
+  padding: 24px; }
+  .myConvenient .convenient-item {
+    text-align: left;
+    background: #fff;
+    padding: 24px;
+    height: 100%; }
+    .myConvenient .convenient-item .convenient-content {
+      margin-left: 16px; }
+      .myConvenient .convenient-item .convenient-content h3 {
+        color: #29303b;
+        font-size: 19px;
+        font-weight: 700; }
+      .myConvenient .convenient-item .convenient-content p {
+        color: #686f71;
+        font-size: 15px;
+        font-weight: normal; }
+  @media screen and (max-width: 768px) {
+    .myConvenient .convenient-item {
+      padding: 15px; }
+    .myConvenient .convenient-content h3 {
+      color: #29303b;
+      font-size: 16px !important;
+      font-weight: 700; }
+    .myConvenient .convenient-content p {
+      color: #686f71;
+      font-size: 14px !important;
+      font-weight: normal; } }
+
+.myStudentView {
+  margin-top: 25px; }
+  .myStudentView .student-content h3 {
+    color: #505763;
+    font-size: 19px;
+    font-weight: normal; }
+  .myStudentView .student-content .student-courses .card-title {
+    color: #29303b;
+    font-size: 14px;
+    font-weight: bold; }
+  .myStudentView .student-content .student-courses .card-text {
+    color: #686f71;
+    font-size: 12px;
+    font-weight: normal; }
+  .myStudentView .student-content .student-courses .rating .rating_star {
+    color: #f4c150;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 2px; }
+  .myStudentView .student-content .student-courses .rating span:nth-child(2) {
+    color: #686f71;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 2px; }
+  .myStudentView .student-content .student-courses .rating span:last-child {
+    color: #686f71;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 2px; }
+  .myStudentView .student-content .student-courses .price {
+    text-align: right;
+    padding-top: 10px; }
+    .myStudentView .student-content .student-courses .price .old-price {
+      color: #686f71;
+      font-size: 13px;
+      font-weight: normal;
+      text-decoration: line-through;
+      margin-right: 4px; }
+    .myStudentView .student-content .student-courses .price .new-price {
+      color: #29303b;
+      font-size: 18px;
+      font-weight: 700; }
+
+.banner .border-top {
+  width: 100%;
+  height: 0.5rem;
+  background: linear-gradient(-45deg, #ec5252 0%, #6e1a52 100%); }
+.banner .banner-content {
+  background: #29303b; }
+  .banner .banner-content .banner-icon {
+    font-size: 28px;
+    color: #fff; }
+  .banner .banner-content .main-content h3 {
+    color: #f7f8fa;
+    font-size: 24px;
+    font-weight: 700; }
+  .banner .banner-content .main-content p {
+    color: #f7f8fa;
+    font-size: 15px;
+    font-weight: normal; }
+@media screen and (max-width: 768px) {
+  .banner .banner-icon {
+    display: none; }
+  .banner .main-content {
+    text-align: center; } }
+
+.myCategories {
+  padding: 20px; }
+  .myCategories h3 {
+    color: #29303b;
+    font-size: 24px;
+    font-weight: 700; }
+  .myCategories .hv {
+    transition: all 1s; }
+  .myCategories .categories-item {
+    width: 100%;
+    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+    opacity: 1;
+    border-color: #ddd;
+    padding: 15px;
+    margin: 10px 0; }
+    .myCategories .categories-item:hover {
+      transform: scale(1.02); }
+    .myCategories .categories-item .categories-icon {
+      display: inline-block;
+      font-size: 32px;
+      padding-right: 16px; }
+    .myCategories .categories-item span {
+      color: #29303b;
+      font-size: 15px;
+      font-weight: normal; }
+
+.sayStudent {
+  background-color: #f7f8fa;
+  padding: 32px 16px; }
+  .sayStudent .sayStudent-content .student-talk {
+    height: 100%; }
+    .sayStudent .sayStudent-content .student-talk .card {
+      padding: 20px; }
+    .sayStudent .sayStudent-content .student-talk .title {
+      padding-top: 20px;
+      padding-left: 20px; }
+    .sayStudent .sayStudent-content .student-talk .card-img-top {
+      width: 15%;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 18px; }
+    .sayStudent .sayStudent-content .student-talk h4 {
+      display: inline-block;
+      color: #29303b;
+      font-size: 16px;
+      font-weight: 700; }
+    .sayStudent .sayStudent-content .student-talk .card-body p {
+      color: #505763;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 1.5rem; }
+
+.myJob {
+  background-color: #f7f8fa;
+  border-bottom: 1px solid #dedfe0; }
+  .myJob .title {
+    color: #686f71;
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 30px; }
+  .myJob .job-content {
+    padding: 28px 30px; }
+    .myJob .job-content h4 {
+      color: #505763;
+      font-size: 19px;
+      font-weight: 700; }
+    .myJob .job-content p {
+      color: #29303b;
+      font-size: 16px;
+      font-weight: normal;
+      padding-top: 3px;
+      line-height: 1.5; }
+  .myJob .border-r {
+    border-right: 1px solid #dedfe0; }
+  @media screen and (max-width: 768px) {
+    .myJob .logo-job {
+      padding: 10px; }
+    .myJob .border-r {
+      border: none; } }
+
+footer .option-main .links {
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 110px; }
+  footer .option-main .links li {
+    flex: 25%;
+    flex-grow: 0; }
+    footer .option-main .links li a {
+      text-decoration: none;
+      color: #007791;
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 18px; }
+      footer .option-main .links li a:hover {
+        color: #003845; }
+footer .option-main .dropup button {
+  border: 1px solid #686f71;
+  border-radius: 0;
+  width: 45%;
+  margin-left: 150px; }
+  footer .option-main .dropup button span {
+    color: #686f71;
+    font-size: 13px;
+    font-weight: 700; }
+  footer .option-main .dropup button:focus {
+    box-shadow: none;
+    outline: 0; }
+  footer .option-main .dropup button:hover {
+    border-color: #505763; }
+    footer .option-main .dropup button:hover span {
+      color: #505763; }
+footer .copyright {
+  align-items: center;
+  padding: 20px 0px 40px 0px; }
+  footer .copyright .lelf-end img {
+    width: 110px;
+    margin-right: 20px; }
+  footer .copyright .lelf-end span {
+    color: #686f71;
+    font-size: 13px;
+    font-weight: normal; }
+  footer .copyright .right-end a {
+    text-decoration: none;
+    color: #007791;
+    font-size: 13px;
+    font-weight: normal; }
+    footer .copyright .right-end a:hover {
+      color: #003845; }
+footer .borderBT-footer {
+  border-top: 6px solid #ec5252; }
+@media screen and (max-width: 768px) {
+  footer .dropup button {
+    margin-left: 0px !important;
+    width: 90% !important; }
+  footer .copyright,
+  footer .right-end {
+    text-align: center !important; }
+  footer .right-end {
+    padding: 10px; } }
+
+.btn--white {
+  color: #686f71;
+  background-color: #fff;
+  font-weight: 600;
+  border: 1px solid #505763;
+  border-radius: 2px; }
+  .btn--white:hover {
+    background-color: rgba(20, 23, 28, 0.05);
+    color: #29303b; }
+
+.btn--red {
+  color: #fff;
+  background-color: #ec5252;
+  font-weight: 600;
+  border: 1px solid #ec5252;
+  border-radius: 2px; }
+  .btn--red:hover {
+    background-color: #992337;
+    color: #fff; }
+
+/*# sourceMappingURL=style.css.map */

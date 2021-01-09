@@ -1,0 +1,73 @@
+// Variable Color
+
+$color-black-0: #29303b;
+$color-white-0: #fff;
+$color-red-0: #ec5252;
+$color-red-1: #992337;
+$color-purple: #6e1a52;
+$color-gray-1: rgba(20, 23, 28, 0.05);
+$color-gray-2: #a1a7b3;
+$color-gray-3: #cacbcc;
+$color-gray-4: #686f71;
+$color-gray-5: #f7f8fa;
+$color-black-light: #505763;
+$color-white-cream: #f2f3f5;
+$color-black-dark: rgba(20, 23, 28, 0.1);
+$color-yellow: #f4c150;
+$color-blue: #007791;
+
+// Variable Background Color
+$bg-color-0: linear-gradient(-45deg, #ec5252 0%, #6e1a52 100%);
+
+// Variable border-hover-navbar
+
+$border-hover-0: rgba(20, 23, 28, 0.05);
+
+// Variable Font-size
+
+$fs-0: 15px;
+$fs-1: 13px;
+$fs-2: 20px;
+$fs-3: 24px;
+$fs-4: 40px;
+
+// Variable Margin
+
+$mg-0: 2px;
+$mg-1: 10px;
+$mg-2: 25px;
+
+// Variable Border-radius
+
+$border-radius: 2px;
+
+// Border
+
+$border-0: 1px solid transparent;
+
+// Variable Padding
+
+$pd-0: 5px; // default
+$pd-1: 10px;
+$pd-2: 15px;
+$pd-3: 20px;
+
+// Variable line-height
+
+$line-height-0: 1.43; // default
+
+// Variable font-weight
+
+$fw-normal: normal;
+$fw-bold-0: 600;
+$fw-bold-1: 700;
+$fw-bold: bold;
+
+// ----------- Break points - Responsive
+
+$breakpoints: (
+    "extra-large": 1200px,
+    "large": 992px,
+    "medium": 768px,
+    "small": 576px,
+);

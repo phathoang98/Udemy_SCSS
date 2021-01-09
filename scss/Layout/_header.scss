@@ -1,0 +1,155 @@
+.myNavBar {
+    .border-top {
+        width: 100%;
+        height: 0.5rem;
+        background: linear-gradient(
+            90deg,
+            rgb(100, 91, 83) 0%,
+            rgb(235, 82, 82) 18.23%,
+            rgb(247, 143, 47) 34.37%,
+            rgb(244, 193, 81) 48.96%,
+            rgb(82, 187, 118) 66.15%,
+            rgb(38, 165, 215) 82.29%,
+            rgb(224, 105, 183) 100%
+        );
+    }
+
+    .navbar {
+        .header-left {
+            flex-wrap: nowrap;
+        }
+    }
+
+    .navbar-brand {
+        img {
+            width: 110px;
+        }
+    }
+
+    .categories {
+        @include text($color-black-light, $fs-1, $fw-normal);
+        align-self: center; // giúp căn giữa đối tượng từ trên xuống (khối cha phải có d-flex)
+        padding: $pd-1 $pd-2;
+        border: $border-0;
+        &:hover {
+            background-color: $color-gray-1;
+            cursor: pointer;
+            border-color: $border-hover-0;
+        }
+    }
+
+    .input-search {
+        flex-grow: 5;
+        .form-control {
+            background-color: $color-gray-1;
+            border: none;
+            transition: none;
+
+            &:focus {
+                box-shadow: none;
+                background-color: $color-white-0;
+                border-top: 1px solid $color-gray-3;
+                border-left: 1px solid $color-gray-3;
+                border-bottom: 1px solid $color-gray-3;
+            }
+
+            &:focus + .input-group-append {
+                .input-group-text {
+                    color: $color-red-0;
+                    background-color: $color-white-0;
+                    border-top: 1px solid $color-gray-3;
+                    border-right: 1px solid $color-gray-3;
+                    border-bottom: 1px solid $color-gray-3;
+                }
+
+                &:hover {
+                    .input-group-text {
+                        background-color: $color-red-0;
+                        color: $color-white-0;
+                    }
+                }
+            }
+
+            &::placeholder {
+                font-size: $fs-1;
+            }
+        }
+
+        .input-group-append {
+            margin-left: 0px;
+
+            .input-group-text {
+                color: $color-red-0;
+                text-decoration: none;
+            }
+
+            .input-group-text {
+                background-color: $color-gray-1;
+                border: none;
+                &:hover {
+                    background-color: $color-red-0;
+                    color: $color-white-0;
+                }
+            }
+        }
+    }
+
+    .navbar-nav {
+        justify-content: space-around;
+        width: 95%;
+        align-self: center;
+
+        .business,
+        .teach {
+            width: 141px;
+            text-align: center;
+        }
+        .nav-item {
+            border: $border-0;
+            .nav-link {
+                @include text($color-black-light, $fs-1, $fw-normal);
+            }
+            &:hover {
+                background-color: $color-gray-1;
+                border-color: $border-hover-0;
+            }
+        }
+
+        .nav-item:nth-child(3) {
+            border: $border-0;
+            border-radius: 50%;
+        }
+    }
+
+    @include respond-to("extra-large") {
+        .navbar-nav {
+            .business,
+            .teach {
+                display: none;
+            }
+        }
+    }
+
+    @include respond-to("large") {
+        .categories {
+            padding: 2px;
+        }
+
+        .categories i {
+            font-size: 12px;
+        }
+    }
+
+    @include respond-to("medium") {
+        .input-search {
+            width: 40%;
+        }
+    }
+
+    @include respond-to("small") {
+        .input-search,
+        .categories {
+            display: none;
+        }
+    }
+}

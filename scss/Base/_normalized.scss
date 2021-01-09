@@ -1,0 +1,36 @@
+/*
+* File NÀY DÙNG ĐỂ CHỈNH SỬA TRỰC TIẾP THƯ VIỆN CỬA NGƯỜI KHÁC 
+(là chỉnh sửa thông qua chính class của thư viện đó)
+*/
+
+.owl-carousel {
+    .owl-nav.disabled {
+        display: block !important;
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+            top: 30%;
+            left: -2%;
+            padding: 0;
+            width: 45px;
+            height: 45px;
+            border-radius: 50% !important;
+            background-color: $color-white-0;
+            box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+
+            span {
+                @include text($color-blue, $fs-4, $fw-normal);
+                line-height: 0.6;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .owl-next {
+            left: unset;
+            right: -2%;
+        }
+    }
+}

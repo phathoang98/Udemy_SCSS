@@ -1,0 +1,35 @@
+.sayStudent {
+    background-color: $color-gray-5;
+    padding: 32px 16px;
+    .sayStudent-content {
+        .student-talk {
+            height: 100%;
+            .card {
+                padding: $pd-3;
+            }
+
+            .title {
+                padding-top: $pd-3;
+                padding-left: $pd-3;
+            }
+            .card-img-top {
+                width: 15%;
+                border-radius: 50%;
+                display: inline-block;
+                margin-right: $pd-3 - 2;
+            }
+
+            h4 {
+                display: inline-block;
+                @include text($color-black-0, $fs-0 + 1, $fw-bold-1);
+            }
+
+            .card-body {
+                p {
+                    @include text($color-black-light, $fs-0 + 1, $fw-normal);
+                    line-height: 1.5rem;
+                }
+            }
+        }
+    }
+}

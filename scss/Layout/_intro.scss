@@ -1,0 +1,48 @@
+.myIntro {
+    background: $bg-color-0;
+    .intro_content {
+        padding: $pd-2;
+        .item-2 {
+            padding-left: 70px;
+        }
+
+        .item-3 {
+            padding-left: 120px;
+        }
+
+        .intro_item {
+            .icon {
+                @include text($color-white-0, 50px, $fw-bold);
+                margin-right: $mg-2;
+            }
+            .icon_content {
+                padding: $pd-1;
+                p:first-child {
+                    @include text($color-white-0, $fs-0 + 2, $fw-bold);
+                    margin-bottom: 0;
+                }
+
+                p:last-child {
+                    @include text($color-white-0, $fs-0, $fw-normal);
+                }
+            }
+        }
+    }
+
+    @include respond-to("extra-large") {
+        .intro_content {
+            .icon {
+                display: none;
+            }
+
+            .icon_content {
+                text-align: center;
+            }
+        }
+    }
+}
+@include respond-to("medium") {
+    .myIntro {
+        display: none;
+    }
+}

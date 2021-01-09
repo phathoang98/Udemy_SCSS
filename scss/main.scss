@@ -1,0 +1,21 @@
+@import "./Helpers/variable";
+@import "./Base/reset";
+
+@import "./Helpers/mixin";
+@import "./Helpers/extend";
+@import "./Helpers/function";
+
+@import "./Layout/header";
+@import "./Layout/carousel";
+@import "./Layout/intro";
+@import "./Layout/courses-1";
+@import "./Base/normalized";
+@import "./Layout/convenient";
+@import "./Layout/student";
+@import "./Layout/banner";
+@import "./Layout/categories";
+@import "./Layout/say-student";
+@import "./Layout/job";
+@import "./Layout/footer";
+
+@import "./Component/button";

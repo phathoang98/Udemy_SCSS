@@ -1,0 +1,32 @@
+.myCategories {
+    padding: $pd-3;
+    h3 {
+        @include text($color-black-0, $fs-3, $fw-bold-1);
+    }
+
+    .hv {
+        transition: all 1s;
+    }
+
+    .categories-item {
+        width: 100%;
+        box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+        opacity: 1;
+        border-color: #ddd;
+        padding: $pd-2;
+        margin: $mg-1 0;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+
+        .categories-icon {
+            display: inline-block;
+            font-size: 32px;
+            padding-right: $pd-2 + 1;
+        }
+        span {
+            @include text($color-black-0, $fs-0, $fw-normal);
+        }
+    }
+}

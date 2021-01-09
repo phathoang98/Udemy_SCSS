@@ -1,0 +1,93 @@
+footer {
+    .option-main {
+        .links {
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 110px;
+            li {
+                flex: 25%;
+                flex-grow: 0;
+                a {
+                    text-decoration: none;
+                    @include text($color-blue, $fs-1, $fw-normal);
+                    line-height: 18px;
+                    &:hover {
+                        color: #003845;
+                    }
+                }
+            }
+        }
+
+        .dropup {
+            button {
+                border: 1px solid $color-gray-4;
+                border-radius: 0;
+                width: 45%;
+                margin-left: 150px;
+                span {
+                    @include text($color-gray-4, $fs-1, $fw-bold-1);
+                }
+
+                &:focus {
+                    box-shadow: none;
+                    outline: 0;
+                }
+
+                &:hover {
+                    span {
+                        color: $color-black-light;
+                    }
+                    border-color: $color-black-light;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        align-items: center;
+        padding: 20px 0px 40px 0px;
+
+        .lelf-end {
+            img {
+                width: 110px;
+                margin-right: $mg-2 - 5;
+            }
+
+            span {
+                @include text($color-gray-4, $fs-1, $fw-normal);
+            }
+        }
+
+        .right-end {
+            a {
+                text-decoration: none;
+                @include text($color-blue, $fs-1, $fw-normal);
+                &:hover {
+                    color: #003845;
+                }
+            }
+        }
+    }
+
+    .borderBT-footer {
+        border-top: 6px solid $color-red-0;
+    }
+
+    @include respond-to("medium") {
+        .dropup {
+            button {
+                margin-left: 0px !important;
+                width: 90% !important;
+            }
+        }
+
+        .copyright,
+        .right-end {
+            text-align: center !important;
+        }
+
+        .right-end {
+            padding: $pd-1;
+        }
+    }
+}
